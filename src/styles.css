@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #6d3643;
+  --secondary-color: #df8197;
+  --bacground-color: rgba(109, 54, 67, 0.08);
+}
+
 h1,
 h2,
 h3,
@@ -9,7 +15,7 @@ h5 {
 }
 
 h1 {
-  color: #6d3643;
+  color: var(--primary-color);
   font-size: 95px;
   margin: 10px 0px 20px;
 }
@@ -23,9 +29,6 @@ p {
   font-size: 35px;
 }
 
-/*font-family: 'Lobster', cursive;
-font-family: 'Poppins', sans-serif;*/
-
 .hero p {
   font-size: 36px;
   font-weight: bold;
@@ -34,22 +37,95 @@ font-family: 'Poppins', sans-serif;*/
 
 .hero {
   padding: 150px 30px;
-  background: rgba(109, 54, 67, 0.08);
+  background: var(--bacground-color);
   text-align: center;
 }
 
 .primary-button {
   margin: 30px 0 0 0;
   padding: 10px 25px;
-  background: #df8197;
+  background: var(--secondary-color);
   color: white;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-  transition: ease-in-out 350ms;
+  transition: transform 2s;
   border-radius: 9999px;
 }
 
 .primary-button:hover {
   background: white;
-  color: #6d3643;
-  border: 2px dashed #6d3643;
+  color: var(--primary-color);
+  border: 2px dashed var(--primary-color);
+  transform: rotate(360deg);
+}
+
+.secondary-button {
+  margin: 30px 0 0 0;
+  border: none;
+  background: var(--secondary-color);
+  color: white;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  transition: ease-in-out 350ms;
+  border-radius: 9999px;
+  text-decoration: none;
+}
+
+.secondary-button:hover {
+  background: white;
+  color: var(--primary-color);
+  border: 2px dashed var(--primary-color);
+}
+.secondary-button-outline {
+  margin: 30px 0 0 0;
+  background: white;
+  border: 2px dashed var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  transition: ease-in-out 350ms;
+  border-radius: 9999px;
+  text-decoration: none;
+}
+
+.secondary-button-outline:hover {
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+}
+
+.projects p {
+  font-size: 18px;
+}
+
+.projects h2 {
+  font-size: 45px;
+  font-family: "Lobster", cursive;
+}
+
+.default-paragraph {
+  font-size: 18px;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.project-buttons a {
+  margin-left: 30px;
+  width: 35%;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .projects p {
+    display: none;
+  }
+  .projects h2 {
+    margin: 15px 0px 5px 0px;
+  }
+}
