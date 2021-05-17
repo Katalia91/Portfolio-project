@@ -20,7 +20,29 @@ h1 {
   font-size: 95px;
   margin: 10px 0px 20px;
 }
-
+.about-section h1 {
+  font-size: 64px;
+  margin-bottom: 25px;
+  line-height: 85px;
+}
+.about-section h2 {
+  font-size: 18px;
+  margin-bottom: 28px;
+  font-weight: 600;
+  color: rgba(39, 33, 66, 0, 7);
+}
+.about-section {
+  padding: 60px 30px;
+}
+.about-section.container {
+  padding: 150px 0;
+}
+.about-section img {
+  width: 70%;
+}
+.about-section p {
+  font-size: 16px;
+}
 h2 {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -74,6 +96,10 @@ p {
   border-radius: 9999px;
   text-decoration: none;
   box-shadow: var(--box-shadow);
+  width: 35%;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .secondary-button:hover {
@@ -92,6 +118,10 @@ p {
   transition: ease-in-out 350ms;
   border-radius: 9999px;
   text-decoration: none;
+  padding: 10px 25px;
+  width: 35%;
+  text-align: center;
+  text-decoration: none;
 }
 
 .secondary-button-outline:hover {
@@ -101,7 +131,8 @@ p {
 }
 
 .projects p,
-.default-paragraph {
+.default-paragraph,
+.description {
   font-size: 16px;
   color: rgba(39, 33, 66, 0, 7);
   line-height: 30px;
@@ -122,13 +153,14 @@ p {
   justify-content: space-evenly;
 }
 
+/*
 .project-buttons a {
   width: 35%;
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
-}
+}*/
 img {
   background: var(--background-color);
   padding: 10px;
