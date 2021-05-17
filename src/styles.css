@@ -177,6 +177,12 @@ img:hover {
   .container {
     padding: 45px;
   }
+  .footer {
+    padding: 20px;
+  }
+  .footer i {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 992px) {
