@@ -34,6 +34,7 @@ p {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
+  margin-bottom: -11px;
 }
 
 .hero {
@@ -118,17 +119,24 @@ p {
 
 .project-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .project-buttons a {
-  margin-left: 30px;
   width: 35%;
   padding: 10px 15px;
   text-align: center;
-
   text-decoration: none;
   text-transform: capitalize;
+}
+img {
+  background: var(--background-color);
+  padding: 10px;
+  transition: all ease-in-out 150ms;
+}
+
+img:hover {
+  box-shadow: var(--box-shadow);
 }
 
 @media (max-width: 768px) {
@@ -148,8 +156,17 @@ p {
   h2 {
     font-size: 20px;
   }
+  .hero {
+    padding: 55px 30px;
+  }
   .hero p {
     font-size: 27px;
+  }
+  .project-buttons {
+    margin-bottom: 30px;
+  }
+  .container {
+    padding: 45px;
   }
 }
 
@@ -162,14 +179,4 @@ p {
   .projects h2 {
     font-size: 32px;
   }
-}
-
-img {
-  background: var(--background-color);
-  padding: 10px;
-  transition: all ease-in-out 150ms;
-}
-
-img:hover {
-  box-shadow: var(--box-shadow);
 }
