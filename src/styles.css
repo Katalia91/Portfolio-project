@@ -139,6 +139,14 @@ img:hover {
   box-shadow: var(--box-shadow);
 }
 
+.footer {
+  background: var(--background-color);
+  padding: 35px;
+}
+.footer i {
+  font-size: 50px;
+  color: var(--primary-color);
+}
 @media (max-width: 768px) {
   .projects p {
     display: none;
@@ -149,6 +157,7 @@ img:hover {
 
   h1 {
     font-size: 55px;
+    margin: 25px;
   }
   .default-paragraph {
     font-size: 20px;
