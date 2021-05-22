@@ -34,6 +34,9 @@ h1 {
 .about-section {
   padding: 60px 30px;
 }
+.about-section > .row {
+  display: flex;
+}
 .about-section.container {
   padding: 150px 0;
 }
@@ -180,6 +183,16 @@ img:hover {
   color: var(--primary-color);
 }
 @media (max-width: 768px) {
+  .about-section {
+    text-align: center;
+  }
+  .about-section-content {
+    padding: 0 50px;
+  }
+  .about-section img {
+    margin-top: 50px;
+  }
+
   .projects p {
     display: none;
   }
