@@ -68,7 +68,14 @@ p {
   text-align: center;
 }
 
-.primary-button {
+.about-btn:hover {
+  background: white;
+  color: var(--primary-color);
+  border: 2px dashed var(--primary-color);
+  transform: rotate(-360deg);
+}
+.primary-button,
+.about-btn {
   margin: 30px 0 0 0;
   padding: 10px 25px;
   background: var(--secondary-color);
@@ -151,7 +158,8 @@ p {
   margin-bottom: 30px;
 }
 
-.project-buttons {
+.project-buttons,
+.hero-buttons {
   display: flex;
   justify-content: space-evenly;
 }
