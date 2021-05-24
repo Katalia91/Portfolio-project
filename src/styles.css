@@ -226,9 +226,6 @@ nav li {
   line-height: 100px;
 }
 
-.home-link a {
-}
-
 nav a {
   color: black;
   text-decoration: none;
@@ -253,7 +250,7 @@ nav ul {
   color: var(--primary-color);
 }
 @media (max-width: 768px) {
-  nav h3 a {
+  .home-link {
     font-size: 18px;
   }
   nav a {
@@ -315,7 +312,7 @@ nav ul {
   .projects h2 {
     font-size: 32px;
   }
-  nav h3 a {
+  .home-link {
     font-size: 18px;
   }
   nav a {
