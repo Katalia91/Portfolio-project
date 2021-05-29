@@ -30,6 +30,10 @@ p {
   font-family: "Poppins", sans-serif;
   font-size: 35px;
 }
+
+.nav-background {
+  background: var(--background-color);
+}
 .active {
   color: var(--secondary-color);
 }
