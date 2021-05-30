@@ -65,12 +65,13 @@ p {
 }
 .content-container {
   padding: 60px 30px;
+  margin-bottom: 100px;
 }
 .content-container > .row {
   display: flex;
 }
 .content-container.container {
-  padding: 150px 0;
+  padding: 57px 0;
 }
 .content-container img {
   width: 70%;
@@ -98,7 +99,7 @@ p {
 }
 
 .hero {
-  padding: 150px 30px;
+  padding: 100px 30px;
   background: var(--background-color);
   text-align: center;
 }
@@ -254,6 +255,21 @@ nav ul {
 footer {
   background: var(--background-color);
   padding: 30px;
+}
+footer p {
+  font-size: 15px;
+}
+footer p a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+footer p a:hover {
+  border: 1px dashed;
+  border-radius: 9999px;
+  padding: 3px;
+  color: var(--secondary-color);
 }
 .email-link {
   color: var(--primary-color);
