@@ -34,6 +34,7 @@ p {
 .nav-background {
   background: var(--background-color);
 }
+
 .active {
   color: var(--secondary-color);
 }
