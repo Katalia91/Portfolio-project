@@ -7,6 +7,9 @@
 ::selection {
   background: var(--secondary-color);
 }
+.active {
+  color: var(--secondary-color);
+}
 h1,
 h2,
 h3,
@@ -30,86 +33,44 @@ p {
   font-family: "Poppins", sans-serif;
   font-size: 35px;
 }
-
-.nav-background {
+img {
   background: var(--background-color);
+  padding: 10px;
+  transition: all ease-in-out 150ms;
+}
+img:hover {
+  box-shadow: var(--box-shadow);
 }
 
-.active {
-  color: var(--secondary-color);
-}
-.contact h1 {
-  text-align: left;
-}
-.contact .social-links i {
-  font-size: 35px;
-  margin-bottom: 30px;
-}
-.contact .social-links {
-  background: none;
-}
-.content-container h1 {
-  font-size: 64px;
-  margin-bottom: 25px;
-  line-height: 85px;
-}
-.content-container h2 {
-  font-size: 18px;
-  margin-bottom: 28px;
-  font-weight: 600;
-  color: rgba(39, 33, 66, 0.7);
-}
+/* Navigation */
 
-.content-container h3 {
-  text-align: left;
+nav {
+  padding: 5px 0;
 }
-.content-container {
-  padding: 60px 30px;
-  margin-bottom: 100px;
-}
-.content-container > .row {
-  display: flex;
-}
-.content-container.container {
-  padding: 57px 0;
-}
-.content-container img {
-  width: 70%;
-}
-.content-container p {
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 100px;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
-.content h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1.5;
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: all 150ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--secondary-color);
+}
+nav ul {
+  padding: 0;
+  margin: 0;
 }
 
-.content p {
-  color: rgba(39, 33, 66, 0.7);
-  font-size: 14px;
-}
+/* Buttons */
 
-.hero p {
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: -11px;
-}
-
-.hero {
-  padding: 100px 30px;
-  background: var(--background-color);
-  text-align: center;
-}
-
-.about-btn:hover {
-  background: white;
-  color: var(--primary-color);
-  border: 2px dashed var(--primary-color);
-  transform: rotate(-360deg);
-}
 .primary-button,
 .about-btn {
   margin: 30px 20px 0 20px;
@@ -123,14 +84,18 @@ p {
   border-radius: 9999px;
   box-shadow: var(--box-shadow);
 }
-
 .primary-button:hover {
   background: white;
   color: var(--primary-color);
   border: 2px dashed var(--primary-color);
   transform: rotate(360deg);
 }
-
+.about-btn:hover {
+  background: white;
+  color: var(--primary-color);
+  border: 2px dashed var(--primary-color);
+  transform: rotate(-360deg);
+}
 .secondary-button {
   margin: 30px 0 0 0;
   border: 1px solid var(--secondary-color);
@@ -147,7 +112,6 @@ p {
   text-align: center;
   text-decoration: none;
 }
-
 .secondary-button:hover {
   background: white;
   color: var(--primary-color);
@@ -169,11 +133,72 @@ p {
   text-align: center;
   text-decoration: none;
 }
-
 .secondary-button-outline:hover {
   background: white;
   color: var(--primary-color);
   border: 1px dashed var(--primary-color);
+}
+
+.contact h1 {
+  text-align: left;
+}
+.contact .social-links i {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.contact .social-links {
+  background: none;
+}
+.content-container {
+  padding: 60px 30px;
+  margin-bottom: 100px;
+}
+.content-container h1 {
+  font-size: 64px;
+  margin-bottom: 25px;
+  line-height: 85px;
+}
+.content-container h2 {
+  font-size: 18px;
+  margin-bottom: 28px;
+  font-weight: 600;
+  color: rgba(39, 33, 66, 0.7);
+}
+.content-container h3 {
+  text-align: left;
+}
+.content-container > .row {
+  display: flex;
+}
+.content-container.container {
+  padding: 57px 0;
+}
+.content-container img {
+  width: 70%;
+}
+.content-container p {
+  font-size: 16px;
+}
+.content h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.content p {
+  color: rgba(39, 33, 66, 0.7);
+  font-size: 14px;
+}
+.hero {
+  padding: 100px 30px;
+  background: var(--background-color);
+  text-align: center;
+}
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: -11px;
 }
 
 .projects p,
@@ -183,21 +208,22 @@ p {
   color: rgba(39, 33, 66, 0, 7);
   line-height: 30px;
 }
-
 .default-paragraph {
   font-weight: bold;
 }
-
 .projects h2 {
   font-size: 50px;
   font-family: "Lobster", cursive;
   margin-bottom: 30px;
 }
 
+/* Homepage */
+
 .project-buttons {
   display: flex;
   justify-content: space-evenly;
 }
+/* Homepage */
 
 /*
 .project-buttons a {
@@ -207,26 +233,6 @@ p {
   text-decoration: none;
   text-transform: capitalize;
 }*/
-img {
-  background: var(--background-color);
-  padding: 10px;
-  transition: all ease-in-out 150ms;
-}
-
-img:hover {
-  box-shadow: var(--box-shadow);
-}
-
-nav {
-  padding: 5px 0;
-}
-nav li {
-  display: inline;
-  list-style: none;
-  line-height: 100px;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-}
 
 .home-link {
   font-family: "Poppins", sans-serif;
@@ -236,41 +242,6 @@ nav li {
   line-height: 100px;
 }
 
-nav a {
-  color: black;
-  text-decoration: none;
-  margin-left: 30px;
-  transition: all 150ms ease-in-out;
-}
-
-nav a:hover,
-nav li.active a {
-  color: var(--secondary-color);
-}
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-
-footer {
-  background: var(--background-color);
-  padding: 30px;
-}
-footer p {
-  font-size: 15px;
-}
-footer p a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  transition: all 150ms ease-in-out;
-}
-
-footer p a:hover {
-  border: 1px dashed;
-  border-radius: 9999px;
-  padding: 3px;
-  color: var(--secondary-color);
-}
 .email-link {
   color: var(--primary-color);
   font-family: "Poppins", sans-serif;
@@ -294,10 +265,74 @@ footer p a:hover {
   color: var(--secondary-color);
 }
 
-/*.social-links {
+.social-links h3 {
+  font-family: "Poppins", sans-serif;
+}
+.more-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.more-link:hover {
+  color: var(--secondary-color);
+}
+
+/* ---------------------------Typewriter effect ------------------------------*/
+.contact-box h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 5px solid var(--secondary-color); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 5px;
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--secondary-color);
+  }
+}
+/* ------------------------------End of Typewriter effect --------------------*/
+
+/* Footer */
+
+footer {
   background: var(--background-color);
-  padding: 35px;
-} /*
+  padding: 30px;
+}
+footer p {
+  font-size: 15px;
+}
+footer p a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+footer p a:hover {
+  border: 1px dashed;
+  border-radius: 9999px;
+  padding: 3px;
+  color: var(--secondary-color);
+}
+/*
 .social-links i {
   font-size: 50px;
   color: var(--primary-color);
@@ -311,22 +346,15 @@ footer p a:hover {
   margin: 30px;
   text-align: center;
 }
-.mail {
-  color: var(--primary-color);
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  text-decoration: none;
-}
-.mail:hover {
-  color: var(--secondary-color);
-}
-
-.social-links i:hover {
-  font-size: 50px;
-  color: var(--secondary-color);} */
+*/
 
 @media (max-width: 768px) {
+  nav a {
+    margin-left: 10px;
+  }
+  footer {
+    margin-top: 250px;
+  }
   .home-link {
     font-size: 18px;
   }
@@ -336,20 +364,35 @@ footer p a:hover {
   .content-container {
     text-align: center;
   }
+  .content-container.container {
+    padding-top: 10px;
+  }
+  .content-container.container p {
+    font-size: 17px;
+  }
   .content {
     padding: 0 50px;
   }
-  .content-container img {
-    margin-top: 50px;
+  .content h1 {
+    font-size: 45px;
+    line-height: 1.3;
   }
-
   .projects p {
     display: none;
   }
   .projects h2 {
     margin: 15px 0px 5px 0px;
   }
-
+  .about img {
+    margin-top: 50px;
+  }
+  .social-links-contact {
+    margin-top: 50px;
+  }
+  .contact .social-links i {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
   h1 {
     font-size: 55px;
     margin: 25px;
@@ -360,18 +403,54 @@ footer p a:hover {
   h2 {
     font-size: 20px;
   }
+
+  /* Homepage */
   .hero {
     padding: 55px 30px;
   }
   .hero p {
     font-size: 27px;
   }
+
   .project-buttons {
     margin-bottom: 30px;
   }
-}
+  .container.contact-box {
+    padding: 0px;
+    margin: 0px;
+  }
 
+  .contact-header h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .social-links h3,
+  .social-links a {
+    font-size: 23px;
+  }
+
+  .contact-box.social-links {
+    margin-top: 100px;
+  }
+  .contact-box h1 {
+    font-size: 23px;
+  }
+  .contact {
+    padding: 10px;
+  }
+  .container a {
+    font-size: 15px;
+  }
+}
 @media (max-width: 992px) {
+  footer {
+    margin-top: 200px;
+  }
+  .contact-box.social-links {
+    margin-top: 15px;
+  }
+
   .projects p {
     font-size: 14px;
     line-height: 20px;
