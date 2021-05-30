@@ -242,7 +242,8 @@ nav ul {
   line-height: 100px;
 }
 
-.email-link {
+.email-link,
+.default-link {
   color: var(--primary-color);
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -250,8 +251,12 @@ nav ul {
   text-decoration: none;
   transition: all 150ms ease-in-out;
 }
-
-.email-link:hover {
+.default-link {
+  font-size: 14px;
+  font-weight: bold;
+}
+.email-link:hover,
+.default-link:hover {
   color: var(--secondary-color);
 }
 .social-links a {
