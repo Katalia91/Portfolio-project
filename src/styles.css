@@ -286,6 +286,10 @@ nav ul {
   color: var(--secondary-color);
 }
 
+.nav-background {
+  background: var(--background-color);
+}
+
 /* ---------------------------Typewriter effect ------------------------------*/
 .contact-box h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
