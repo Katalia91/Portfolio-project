@@ -200,7 +200,10 @@ nav ul {
   text-align: center;
   margin-bottom: -11px;
 }
-
+.intro {
+  max-width: 900px;
+  margin: 0 auto;
+}
 .projects p,
 .default-paragraph,
 .description {
@@ -223,16 +226,6 @@ nav ul {
   display: flex;
   justify-content: space-evenly;
 }
-/* Homepage */
-
-/*
-.project-buttons a {
-  width: 35%;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: capitalize;
-}*/
 
 .home-link {
   font-family: "Poppins", sans-serif;
